@@ -1,6 +1,11 @@
+---
+layout: default
+title: Privacy Policy
+---
+
 # Privacy Policy
 
-**Last updated:** May 11, 2026
+**Last updated:** June 8, 2026
 
 ## Introduction
 
@@ -31,23 +36,39 @@ Unlike most finance apps, Bloomly does **NOT** collect, store, or transmit:
 All your data is stored in two places, both controlled entirely by **YOU**:
 
 ### 1. On Your Device
-Your transactions, categories, savings goals, and preferences are stored locally on your iPhone, iPad, or Mac using Apple's SwiftData framework. This data never leaves your device unless you explicitly export it.
+
+Your transactions, categories, savings goals, and preferences are stored locally on your iPhone using Apple's SwiftData framework. This data never leaves your device unless you explicitly export it.
 
 ### 2. In Your Personal iCloud Account
+
 If you have iCloud enabled and signed in, your data is automatically and **end-to-end encrypted** by Apple, then synced across your Apple devices via Apple's CloudKit service. This is the same secure technology Apple uses for iCloud Photos and iCloud Drive.
 
 **Important:** This data lives in **YOUR** iCloud account — not ours. We have no access to it. Apple is the data processor; you are the data controller.
 
 To manage your iCloud sync:
+
 - Go to **iPhone Settings → Apple ID → iCloud → Apps Using iCloud → Bloomly**
 - Toggle on/off as you wish
+
+## Home Screen Widgets
+
+Bloomly includes Home Screen widgets in three sizes (Small, Medium, Large). The widget functionality:
+
+- Reads data **only** from the App Group container shared between the app and the widget extension
+- All data remains on your device — widgets do not transmit any information
+- Widget snapshots are stored as local JSON files in your device's protected sandbox
+- Tap actions open the main app via custom URL scheme (`bloomly://`)
+
+**Widgets do not transmit any data, access the network, or send analytics.**
 
 ## Third-Party Services We Use
 
 Bloomly uses a limited number of third-party services for essential functionality:
 
-### RevenueCat (Subscription Management)
-We use RevenueCat to manage in-app purchases and subscriptions. RevenueCat receives:
+### RevenueCat (Purchase Management)
+
+We use RevenueCat to manage in-app purchases. RevenueCat receives:
+
 - An **anonymous user ID** (random string, not linked to your identity)
 - Your **purchase status** (e.g., "Lifetime Pro: active")
 - The **product purchased** (e.g., `bp_lifetime_1299`)
@@ -58,9 +79,11 @@ RevenueCat does **NOT** receive your name, email, financial data, or any persona
 RevenueCat's Privacy Policy: https://www.revenuecat.com/privacy
 
 ### Apple App Store / In-App Purchases
-When you make a purchase (Lifetime, Monthly, or Yearly Pro), Apple handles the payment through your existing Apple ID. Apple is the merchant of record. Apple's Privacy Policy: https://www.apple.com/legal/privacy/
+
+When you make a purchase, Apple handles the payment through your existing Apple ID. Apple is the merchant of record. Apple's Privacy Policy: https://www.apple.com/legal/privacy/
 
 ### Apple iCloud (CloudKit)
+
 As described above, your data syncs through Apple's iCloud service. Apple's privacy practices are described here: https://www.apple.com/legal/privacy/
 
 ## Data We Do Not Share
@@ -87,6 +110,21 @@ Bloomly contains **NO analytics tracking**:
 - ❌ No App Tracking Transparency (ATT) prompts needed
 
 The app does not connect to any analytics services. We do not know how many users we have, what features they use, or how long they spend in the app.
+
+## Notifications
+
+Bloomly uses local notifications for:
+
+- Daily expense reminders
+- Goal milestone celebrations (50%, 75%, 100%)
+- Recurring transaction reminders
+
+**All notifications are 100% local.** No data is transmitted to any server. Notifications are handled entirely by Apple's UserNotifications framework on your device. We do not use APNs (Apple Push Notification Service) or any remote push system.
+
+You can disable notifications at any time:
+
+- In-app: **Profile → Notifications**
+- iOS Settings: **Settings → Notifications → Bloomly**
 
 ## Children's Privacy
 
@@ -117,6 +155,7 @@ If you have GDPR-related questions, you may contact us at the email below.
 ## Data Retention
 
 Your data is retained for as long as:
+
 - You keep the app installed on your device, AND
 - You keep your iCloud account active with sync enabled
 
@@ -124,7 +163,7 @@ When you delete the app and disable iCloud sync, all your Bloomly data is perman
 
 ## In-App Purchase Information
 
-When you purchase Pro (Lifetime, Monthly, or Yearly):
+When you purchase Pro (Lifetime $12.99):
 
 1. Apple processes the payment through your Apple ID
 2. Apple sends a purchase receipt to RevenueCat
